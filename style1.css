@@ -1,0 +1,157 @@
+/* Estilos globais para o corpo e fontes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para o cabeçalho (Header) */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}
+
+/* Estilo para as seções */
+section {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Estilo para a seção "Sobre Mim" */
+#sobre .bio {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Estilos para a seção "Sobre Mim" com foto */
+#sobre .sobre-conteudo {
+    display: flex;
+    flex-direction: column; /* Coluna em telas menores */
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.foto-perfil {
+    flex: 1; /* A foto ocupa menos espaço */
+    text-align: center;
+}
+
+.foto-perfil img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query para telas maiores (desktop) */
+@media (min-width: 768px) {
+    #sobre .sobre-conteudo {
+        flex-direction: row; /* Altera para linha em telas maiores que 768px */
+        text-align: left;
+    }
+
+    .foto-perfil {
+        order: 2; /* Coloca a foto à direita do texto */
+        padding-left: 2rem;
+    }
+
+    #sobre .bio {
+        order: 1;
+    }
+}
+
+/* Estilo para a seção "Portfólio" */
+#portfolio {
+    background-color: #e9ecef;
+}
+
+.projeto {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+}
+
+.projeto h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.projeto a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para a seção "Contato" */
+#contato ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espaço entre os itens da lista */
+}
+
+#contato ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Estilo para o rodapé (Footer) */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+}
