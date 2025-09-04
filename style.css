@@ -40,6 +40,13 @@ h2::after {
  * -----------------------------------------------------------
  */
 header {
+    /* Adicionando propriedades para o cabeçalho fixo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Estilos existentes */
     background-color: #212529; /* Fundo do cabeçalho em preto */
     color: #fff;
     padding: 1rem 2rem;
@@ -48,7 +55,6 @@ header {
     align-items: center;
     flex-wrap: wrap;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
 }
 
 .header-content {
@@ -99,6 +105,11 @@ header nav ul li a:hover {
  * SEÇÃO SOBRE MIM - COM FOTO AO LADO DO TÍTULO
  * -----------------------------------------------------------
  */
+/* Adicionado padding para compensar a altura do cabeçalho fixo */
+#sobre {
+    padding-top: calc(4rem + 80px); /* Ajuste dinâmico. 4rem do seu padding original + a altura do header */
+}
+
 .sobre-titulo-foto {
     display: flex;
     align-items: center;
@@ -267,4 +278,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
