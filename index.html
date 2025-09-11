@@ -1,81 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almir Neto - Engenheiro de Software</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almir Neto - Engenheiro de Software</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-</a>
-<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/3fc64201-10c6-45a7-a529-7ebaac263e95-loader.js" ></script>
-    <header>
-        <div class="header-content">
-            <h1>Almir Neto - Engenheiro de Software</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </header>
-
-    <section id="sobre">
-        <div class="sobre-titulo-foto">
-            <h2>Sobre Mim</h2>
-            <div class="foto-perfil-sobre">
-                <img src="./assets/perfil.jpg" alt="Sua foto de perfil profissional">
-            </div>
-        </div>
-        <div class="sobre-conteudo">
-            <div class="bio">
-                <p>Desde os 14 anos, a tecnologia se tornou uma parte fundamental da minha vida. Meu primeiro contato com programação foi criando e editando sites em PHP para gerenciar um servidor de jogos. Essa experiência inicial despertou minha paixão por transformar ideias em soluções reais.</p>
-                
-                <p>Sou bacharel em Ciências Contábeis, uma formação que me deu uma visão analítica profunda. Hoje, uso essa habilidade para enxergar além dos números, compreendendo os desafios do negócio e identificando oportunidades de melhoria.</p>
-                
-                <p>Atualmente, meu foco é o desenvolvimento em C#, .NET, SQL Server e MySQL, além de usar ferramentas de Excel e Power BI para unir programação e análise de dados.</p>
-                
-                <p>Um dos meus projetos de destaque é o Sistema de Gestão de Pendências de Pedidos. Desenvolvido em C# e SQL Server, essa solução nasceu da minha observação de um problema no fluxo de vendas, trazendo mais organização, agilidade e confiabilidade para a operação.</p>
-                
-                <p>Meu objetivo é criar soluções que gerem um impacto direto e positivo no negócio, otimizando processos, organizando informações e transformando dados em estratégias inteligentes.</p>
-
-                <p>Ficou com alguma dúvida ou tem alguma ideia? Entre em contato!!</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <h2>Meus Projetos</h2>
-        <div class="projetos-grid">
-            <div class="projeto">
-                <h3>Gestão de pedidos para ecommerce</h3>
-                <p>Um programa desenvolvido em C# para concentrar informações a respeito de pedidos problemáticos e controle de atendimento especial para eles. Alinha o setor de aprovação de pedidos com o setor de atendimento virtual.</p>
-                <a href="https://github.com/netofrg/PedidoPendencias" target="_blank">Ver no GitHub</a>
-            </div>
-            <div class="projeto">
-                <h3>Oficio Fácil</h3>
-                <p>Gerador de oficio destinados a cartórios da RMR. Gera com o nome do responsável de forma numerada por cartório e oficio gerado.</p>
-                <a href="https://github.com/netofrg/OficioFacil" target="_blank">Ver no GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <p>Você pode me encontrar nas redes sociais ou enviar um e-mail.</p>
+  <!-- Header -->
+  <header class="animate__animated animate__fadeInDown">
+    <div class="header-content">
+      <h1>Almir Neto - Engenheiro de Software</h1>
+      <nav>
         <ul>
-            <li><a href="mailto:almircarneiro@gmail.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/almir-neto-5719131b7/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/netofrg/" target="_blank">GitHub</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Almir Neto. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Sobre -->
+  <section id="sobre" data-aos="fade-up">
+    <div class="sobre-titulo-foto">
+      <h2>Sobre Mim</h2>
+      <div class="foto-perfil-sobre">
+        <img src="./assets/perfil.jpg" alt="Foto de perfil profissional">
+      </div>
+    </div>
+    <div class="sobre-conteudo">
+      <p>Desde os 14 anos, a tecnologia se tornou uma parte fundamental da minha vida. Meu primeiro contato com programação foi criando e editando sites em PHP para gerenciar um servidor de jogos. Essa experiência inicial despertou minha paixão por transformar ideias em soluções reais.</p>
+      
+      <p>Sou bacharel em Ciências Contábeis, uma formação que me deu uma visão analítica profunda. Hoje, uso essa habilidade para enxergar além dos números, compreendendo os desafios do negócio e identificando oportunidades de melhoria.</p>
+      
+      <p>Atualmente, meu foco é o desenvolvimento em C#, .NET, SQL Server e MySQL, além de usar ferramentas de Excel e Power BI para unir programação e análise de dados.</p>
+      
+      <p>Um dos meus projetos de destaque é o Sistema de Gestão de Pendências de Pedidos. Desenvolvido em C# e SQL Server, essa solução nasceu da minha observação de um problema no fluxo de vendas, trazendo mais organização, agilidade e confiabilidade para a operação.</p>
+      
+      <p>Meu objetivo é criar soluções que gerem um impacto direto e positivo no negócio, otimizando processos, organizando informações e transformando dados em estratégias inteligentes.</p>
 
+      <p>Ficou com alguma dúvida ou tem alguma ideia? Entre em contato!!</p>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section id="portfolio">
+    <h2 data-aos="zoom-in">Meus Projetos</h2>
+    <div class="projetos-grid">
+      <div class="projeto" data-aos="fade-right">
+        <h3>Gestão de pedidos para ecommerce</h3>
+        <p>Um programa desenvolvido em C# para concentrar informações a respeito de pedidos problemáticos e controle de atendimento especial para eles. Alinha o setor de aprovação de pedidos com o setor de atendimento virtual.</p>
+        <a href="https://github.com/netofrg/PedidoPendencias" target="_blank"><i class="fab fa-github"></i> Ver no GitHub</a>
+      </div>
+      <div class="projeto" data-aos="fade-left">
+        <h3>Oficio Fácil</h3>
+        <p>Gerador de ofícios destinados a cartórios da RMR. Gera com o nome do responsável de forma numerada por cartório e ofício gerado.</p>
+        <a href="https://github.com/netofrg/OficioFacil" target="_blank"><i class="fab fa-github"></i> Ver no GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" data-aos="fade-up">
+    <h2>Entre em Contato</h2>
+    <p>Você pode me encontrar nas redes sociais ou enviar um e-mail.</p>
+    <ul class="social-links">
+      <li><a href="mailto:almircarneiro@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+      <li><a href="https://www.linkedin.com/in/almir-neto-5719131b7/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/netofrg/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Almir Neto. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JS Libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
